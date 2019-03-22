@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_name"
+        android:layout_alignParentStart="true"
+        android:text="@string/surname"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_surname"
+        android:layout_alignParentStart="true"
+        android:text="@string/marks"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:autofillHints=""
+        android:inputType="text"
+        android:labelFor="@+id/textView"
+        tools:ignore="LabelFor"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/editText_surname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:autofillHints=""
+        android:inputType="text"
+        android:labelFor="@+id/textView2"
+        tools:ignore="LabelFor"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/editText_Marks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_surname"
+        android:layout_toEndOf="@+id/textView3"
+        android:autofillHints=""
+        android:inputType="text"
+        android:labelFor="@+id/textView3"
+        tools:ignore="LabelFor"
+        tools:targetApi="o" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_Marks"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="76dp"
+        android:text="@string/add_data" />
+
+    <Button
+        android:id="@+id/button_viewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_update"
+        android:layout_centerHorizontal="true"
+        android:text="@string/view_all" />
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_add"
+        android:layout_alignParentStart="true"
+        android:text="@string/update" />
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_viewAll"
+        android:layout_alignStart="@+id/button_viewAll"
+        android:layout_centerVertical="true"
+        android:text="@string/delete" />
+
+    <TextView
+        android:id="@+id/textView_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_Marks"
+        android:layout_alignParentStart="true"
+        android:text="@string/id"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editText_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView_id"
+        android:layout_toEndOf="@+id/textView3"
+        android:autofillHints=""
+        android:inputType="text"
+        android:labelFor="@+id/textView_id"
+        tools:ignore="LabelFor"
+        tools:targetApi="o" />
+</RelativeLayout>
